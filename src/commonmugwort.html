@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Common Mugwort</title>
+</head>
+
+<body style="background-color: rgb(203, 255, 196);">
+  <main>
+    <h1>Common Mugwort</h1>
+
+    <div>
+        Common Mugwort (Artemisia vulgaris) is an herbaceous plant often found in nitrogen-rich soils. The plant's scent is 
+        reportedly a mild insect repellant. Common Mugwort is used as an oferring in Nepalese temples. Tradition holds that it has cleansing
+        properties, so believers also use it to sweep their floors to give them both a spiritiual and physical cleaning.
+    </div>
+    <br />
+    <img style="max-width:100%;height:auto;margin:0 auto" src="images/mugwort-image.jpg">
+
+    <h4>Tips from Garden Coaches</h4>
+    <div>
+        Common Mugwort is cultivated as an ornamental and aromatic herb out of the 300 species of Artemisia genus. With its toughness and 
+        repellents, common mugwort is a good schoice for you to protect your garden from nasty pests with an intricate border.
+    </div>
+
+    <div>Please scan the QRCode below to go to my website:</div>
+
+    <img id="myimage" style="margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="">
+  
+  </main>
+
+
+
+  <script>
+    (async function() {
+        const { code } = await( await fetch(`/api/CodeGeneratorTrigger?text=https://www.ryeneckplants.com/commonmugwort.html`)).json();
+        document.querySelector('#myimage').src = code;
+    }())
+    </script>
+
+
+</body>
+
+</html>
