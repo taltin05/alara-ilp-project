@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Shortpod mustard</title>
+</head>
+
+<body style="background-color: rgb(255, 196, 250);">
+  <main>
+    <h1>Shortpod mustard</h1>
+    <div>
+        Shortpod mustard (Hirschfeldia incana) is a flowering plant species related to the mustard plant. 
+        Shortpod mustard grows natively throughout land adjacent to the sea in the Mediterranean region. The leaves of this species are edible, like many mustard plants.
+    </div>
+    <br />
+    <img style="max-width:100%;height:auto;margin:0 auto" src="images/ShortpodMustard-image.jpg">
+
+ 
+    <div>Please scan the QRCode below to go to my website:</div>
+    <img id="myimage" style="margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="">
+  
+  </main>
+
+
+
+  <script>
+    (async function() {
+        const { code } = await( await fetch(`/api/CodeGeneratorTrigger?text=https://www.ryeneckplants.com/shortpodmustard.html`)).json();
+        document.querySelector('#myimage').src = code;
+    }())
+    </script>
+
+
+</body>
+
+</html>

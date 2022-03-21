@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Creeping Juniper</title>
+</head>
+
+<body style="background-color: rgb(251, 255, 196);">
+  <main>
+    <h1>Creeping Juniper</h1>
+    <div>
+        Creeping juniper (Juniperus horizontalis) is a juniper shrub native to North America, particularly Canada. Creeping juniper is mainly grown as an ornamental plant for ground cover in gardens. 
+        There are over 100 cultivars of creeping juniper. Creeping juniper is a juniper shrub native to North America, particularly Canada. 
+        Creeping juniper is mainly grown as an ornamental plant for ground cover in gardens. 
+    </div>
+    <br />
+    <img style="max-width:100%;height:auto;margin:0 auto" src="images/CreepingJuniper-image.jpeg">
+
+ 
+    <div>Please scan the QRCode below to go to my website:</div>
+    <img id="myimage" style="margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="">
+  
+  </main>
+
+
+
+  <script>
+    (async function() {
+        const { code } = await( await fetch(`/api/CodeGeneratorTrigger?text=https://www.ryeneckplants.com/creepingjuniper.html`)).json();
+        document.querySelector('#myimage').src = code;
+    }())
+    </script>
+
+
+</body>
+
+</html>
